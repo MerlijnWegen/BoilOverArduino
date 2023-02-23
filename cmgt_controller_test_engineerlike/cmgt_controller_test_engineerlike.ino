@@ -32,7 +32,7 @@ void setup() {
 
 void loop() {
   //JOYSTICK RIGHT player 1
-  if (!digitalRead(3) == HIGH) {
+  if (!digitalRead(12) == HIGH) {
   Keyboard.press('d');
   Serial.println("d pressed");
   }
@@ -41,7 +41,7 @@ void loop() {
   }
 
   //JOYSTICK LEFT player 1
-  if (!digitalRead(4) == HIGH) {
+  if (!digitalRead(11) == HIGH) {
   Keyboard.press('a');
   Serial.println("a pressed");
   }
@@ -50,7 +50,7 @@ void loop() {
   }
 
   //JOYSTICK DOWN player 1
-  if (!digitalRead(5) == HIGH) {
+  if (!digitalRead(9) == HIGH) {
   Keyboard.press('s');
   Serial.println("s pressed");
   }
@@ -59,7 +59,7 @@ void loop() {
   }
 
   //JOYSTICK UP player 1
-  if (!digitalRead(6) == HIGH) {
+  if (!digitalRead(10) == HIGH) {
   Keyboard.press('w');
   Serial.println("w pressed");
   }
@@ -68,7 +68,7 @@ void loop() {
   }
 
   //attack player 1
-  if (!digitalRead(14) == HIGH) {
+  if (!digitalRead(18) == HIGH) {
   Keyboard.press('e');
   Serial.println("e pressed - attack 1");
   }
@@ -77,7 +77,7 @@ void loop() {
   }
 
   //defend player 1
-  if (!digitalRead(15) == HIGH) {
+  if (!digitalRead(19) == HIGH) {
   Keyboard.press('r');
   Serial.println("r pressed - defend 1");
   }
@@ -126,7 +126,7 @@ void loop() {
   }
 
   //attack player 2
-  if (!digitalRead(18) == HIGH) {
+  if (!digitalRead(20) == HIGH) {
   Keyboard.press('o');
   Serial.println("o pressed - attack 2");
   }
@@ -135,7 +135,7 @@ void loop() {
   }
 
   //defend player 1
-  if (!digitalRead(19) == HIGH) {
+  if (!digitalRead(21) == HIGH) {
   Keyboard.press('p');
   Serial.println("p pressed - defend 2");
   }
